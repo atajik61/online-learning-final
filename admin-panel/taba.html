@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Manage Teachers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .sidebar {
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 250px;
+            background-color: #343a40;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            color: #fff;
+        }
+        .content {
+            margin-left: 260px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h4 class="text-white text-center">Admin Panel</h4>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Manage Teachers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Manage Students</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Manage Classes</a>
+        </li>
+    </ul>
+</div>
+
+<div class="content">
+    <h2 class="mb-4">Manage Teachers</h2>
+    <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#teacherModal">Add Teacher</button>
+    
+    <table class="table table-bordered table-responsive">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>Math</td>
+                <td>
+                    <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#teacherModal">Edit</button>
+                    <button class="btn btn-danger btn-sm">Delete</button>
+                </td>
+            </tr>
+            <!-- More teacher rows can be added here -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="teacherModal" tabindex="-1" role="dialog" aria-labelledby="teacherModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="teacherModalLabel">Add/Edit Teacher</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="teacherName">Name</label>
+                        <input type="text" class="form-control" id="teacherName" placeholder="Enter teacher's name">
+                    </div>
+                    <div class="form-group">
+                        <label for="teacherSubject">Subject</label>
+                        <input type="text" class="form-control" id="teacherSubject" placeholder="Enter subject">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

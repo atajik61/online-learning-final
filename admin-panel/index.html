@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- font-link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+  <!-- sidebar-link -->
+    
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles11.css">
+</head>
+<body>
+   
+  <div class="container-fluid">
+    <div class="row " >
+        <div  class="col-auto col-lg-3 col-md-3 col-xl-2  px-0 ">
+            <div id="a1" class="mt-10  d-flex flex-column align-items-center align-items-sm-start  min-vh-100 ">
+                <a href="" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-decoration-none ">
+                   <h2 class="c1  ">Studyes</h2>
+                </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li>
+                        <a href="admin.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline c1">Dashboard</span> </a>
+                    </li>
+                    <li>
+                        <a href="manage users.html" class="nav-link px-0 align-middle">
+                            <i class=" fs-4   bi bi-gear"></i> <span class="ms-1 d-none d-sm-inline c1">Manage Users</span></a>
+                    </li>
+                    <li>
+                        <a href="manage curses.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                          <i class=" fs-4 bi bi-kanban-fill"></i> <span class="ms-1 d-none d-sm-inline c1">Manage Courses</span></a>
+                    </li>
+                    <li>
+                        <a href="platform.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline c1">Platform</span> </a>
+                    </li>
+                    <li>
+                        <a href="site content.html" class="nav-link px-0 align-middle">
+                            <i class="bi bi-diagram-3-fill"></i> <span class="ms-1 d-none d-sm-inline c1">Stei Content</span> </a>
+                    </li>
+
+                    <li>
+                      <a href="approve instractor.html" class="nav-link px-0 align-middle">
+                        <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline c1">Approve Instractor</span> </a>
+                  </li>
+
+                  <li>
+                    <a href="manage teacher.html" class="nav-link px-0 align-middle">
+                      <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline c1">Manage Teascer</span> </a>
+                </li>
+                </ul>
+               
+            </div>
+        </div>
+        <div class="col py-3">
+          <main role="main" class="main-content col-lg-9 col-md-9  col-xl-10  px-4" id="content">
+            <div class="header">
+                <h2>Dashboard</h2>
+                <button class="btn btn-primary d-md-none" id="toggle-btn">Toggle Sidebar</button>
+            </div>
+            <div class="content mt-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Total Users</h5>
+                                <p class="card-text">200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Total Courses</h5>
+                                <p class="card-text">50</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Pending Instructors</h5>
+                                <p class="card-text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h5>Add New Course</h5>
+                    <form>
+                        <div class="form-group">
+                            <label for="courseName">Course Name</label>
+                            <input type="text" class="form-control" id="courseName" placeholder="Enter course name">
+                        </div>
+                        <div class="form-group">
+                            <label for="courseDescription">Course Description</label>
+                            <textarea class="form-control" id="courseDescription" rows="3" placeholder="Enter course description"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Course</button>
+                    </form>
+                </div>
+
+                <div class="mt-4">
+                    <h5>Platform Usage</h5>
+                    <p>Monitor platform usage and engagement metrics here.</p>
+                    <ul>
+                        <li>Active Users: 150</li>
+                        <li>Courses Completed: 120</li>
+                        <li>Daily Logins: 75</li>
+                    </ul>
+                </div>
+            </div>
+        </main> 
+        </div>
+    </div>
+</div>
+
+        
+  
+
+
+
+ 
+</div>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const closeBtn = document.querySelector(".close");
+      const sidebar = document.querySelector(".sidebar");
+  
+      // Function to open sidebar
+      menuBtn.addEventListener("click", () => {
+        sidebar.style.display = "block"; // Show the sidebar
+      });
+  
+      // Function to close sidebar
+      closeBtn.addEventListener("click", () => {
+        sidebar.style.display = "none"; // Hide the sidebar
+      });
+    </script>
+</body>
+</html>
