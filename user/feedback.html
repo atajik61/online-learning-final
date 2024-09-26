@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <!-- Sidebar -->
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">
+                            <div class="text-center profile-section">
+                                <img src="image/graduated.png" alt="Profile" class="img-fluid rounded-circle" width="80">
+                                <h4 class="name">Afsana Tajik</h4>
+                                <p class="text-muted">Student</p>
+                                <button class="btn btn-primary">View Profile</button>
+                            </div>
+                        </span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="certificat.html" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <img src="image/home-button.png" alt="Profile" class="img-fluid  mb-1" style="width: 25px;"><span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="courses.html" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <img src="image/classroom.png" alt="Profile" class="img-fluid  mb-1" style="width: 25px;"><span class="ms-1 d-none d-sm-inline">Your Courses</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="home.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-table"></i><img src="image/teachers-day.png" alt="Profile" class="img-fluid  mb-1" style="width: 25px;"><span class="ms-1 d-none d-sm-inline">Your Teachers</span></a>
+                        </li>
+                        <li>
+                            <a href="curriculum.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-table"></i><img src="image/resume.png" alt="Profile" class="img-fluid  mb-1" style="width: 25px;"><span class="ms-1 d-none d-sm-inline">Your Curriculum</span></a>
+                        </li>
+                        <li>
+                            <a href="Exam.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-table"></i><img src="image/exam.png" alt="Profile" class="img-fluid  mb-1" style="width: 25px;"><span class="ms-1 d-none d-sm-inline">Exam & Grade</span></a>
+                        </li>
+                        <li>
+                            <a href="progress.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-table"></i><img src="image/business.png" alt="Profile" class="img-fluid  mb-1" style="width: 25px;"><span class="ms-1 d-none d-sm-inline">Your Progress</span></a>
+                        </li>
+                        <li>
+                            <a href="feedback.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-table"></i><img src="image/tick.png" alt="Profile" class="img-fluid  mb-1" style="width: 25px;"><span class="ms-1 d-none d-sm-inline">Feedback</span></a>
+                        </li>
+                        
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+
+            <!-- Main content -->
+             <div class="col py-3">
+            <main class="col col-md-9 col-xl-12">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h1>Studys</h1>
+                    <input type="text" class="form-control w-50" placeholder="search courses">
+                    <div class="d-flex">
+                        <button class="btn btn-light me-2">
+                            <i class="bi bi-person"></i>
+                        </button>
+                        <button class="btn btn-light">
+                            <i class="bi bi-gear"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="feedback-section text-center">
+                    <h2>Feedback</h2>
+                    <div class="feedback-icons">
+                        <img src="image/feedback.jpg" alt="Feedback Icons" class="img-fluid" width="200">
+                    </div>
+                    <form action="" method="post" class="mt-4">
+                        <div class="mb-3">
+                            <label for="feedback" class="form-label">Write a feedback about courses:</label>
+                            <textarea class="form-control" id="feedback" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>Copyright © 2024 Online Learning | All rights reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
