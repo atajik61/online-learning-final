@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    overflow-x: hidden; 
+}
+h1{
+    color:blue;
+    margin-bottom: 20px;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+h3{  font-size: 28px;
+    line-height: 1.7;
+    color: #555;
+    text-align: left;
+    padding: 5px;
+    margin-left: 15px;
+}
+.custom-input, .custom-btn{
+    width: 250PX; 
+    margin-left: 10px;
+}
+
+.image-container {
+    position: relative;
+    height: 450px; /* ارتفاع دیو */
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.image-wrapper {
+    position: absolute;
+    top: 0;
+    animation: slideDown 30s linear infinite; /* زمان انیمیشن */
+}
+
+.image {
+    display: block;
+    width: 100%; /* اندازه تصویر */
+    height: 280px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    object-fit: cover;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%); /* حرکت به سمت بالا */
+    }
+
+}
+@media(max-width:991px){
+    .image-wrapper{
+        position: relative;
+        display: flex;
+        left: 0;
+        overflow: hidden;
+        animation: slideH 30s linear infinite;
+    }
+    .image-container {
+        position: absolute;
+        height: 300px; /* ارتفاع دیو */
+        margin-top: 30px;
+    }
+    .image {
+        width: 200px; /* اندازه تصویر */
+        height: 280px;
+        margin-right: 15px;
+        display: flex;
+    } 
+    @keyframes slideH {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%); /* حرکت به سمت چپ */
+        }
+}}
