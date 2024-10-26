@@ -2,6 +2,7 @@ body{
 	margin:0;
 	padding:0;
 	font-family: 'Times New Roman', Times, serif !important;
+    overflow-x: hidden; 
 }
 
 p,h1,h2,h3,h4, .but{
@@ -10,6 +11,22 @@ p,h1,h2,h3,h4, .but{
 header{
 	position:relative;
 	
+}
+section,h1{
+    margin-bottom: 20px;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+section,h3{ 
+     font-size: 28px;
+    line-height: 1.7;
+    text-align: left;
+    padding: 5px;
+    margin-left: 15px;
+    font-family: 'Times New Roman', Times, serif;
 }
 /*** Navbar ***/
 .nav-link{
@@ -45,16 +62,28 @@ header{
 /*Amena*/
 .card{
     border-radius: 40px;
-
+    transition: transform 0.3s ease;
 	padding-top:10px;
 	border-style:none;
-	transition:background-color 0.5s;
+    margin-right: 10px;
+    margin-left: 10px;
+	/* transition:background-color 0.5s; */
 }
-.card:hover{
-	background-color:#1230AE;
-	color:white;
+.card.active {
+    transform: scale(1.1); 
+    background-color:#1230AE;
+	color:white;/* بزرگ‌تر کردن کارت */
 }
+@media(max-width:547px){
+    .card.active {
+        transform: scale(1.05); 
+}
+.card{
 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}     
+}
 .icon{
 	font-size:2em;
 	text-align:center;
@@ -133,9 +162,9 @@ footer{
     height: 150px;
     align-self: center;
 }
-.english{
+/* .english{
     margin-top: 20px;
-}
+} */
 .text{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -152,3 +181,71 @@ footer{
     align-self: center;
 
 }
+
+.custom-input, .custom-btn{
+    width: 250PX; 
+    margin-left: 10px;
+}
+
+.image-container {
+    position: relative;
+    height: 450px; /* ارتفاع دیو */
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.image-wrapper {
+    position: absolute;
+    top: 0;
+    animation: slideDown 30s linear infinite; /* زمان انیمیشن */
+}
+
+.image {
+    display: block;
+    width: 100%; /* اندازه تصویر */
+    height: 280px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    object-fit: cover;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%); /* حرکت به سمت بالا */
+    }
+
+}
+@media(max-width:770px){
+    .image-wrapper{
+        position: relative;
+        display: flex;
+        left: 0;
+        overflow: hidden;
+        animation: slideH 30s linear infinite;
+    }
+    .image-container {
+        position: absolute;
+        height: 300px; /* ارتفاع دیو */
+        margin-top: 30px;
+    }
+    .image {
+        width: 200px; /* اندازه تصویر */
+        height: 280px;
+        margin-right: 15px;
+        display: flex;
+    } 
+    .h{
+        display: block;
+    }
+
+    @keyframes slideH {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%); /* حرکت به سمت چپ */
+        }
+}}
