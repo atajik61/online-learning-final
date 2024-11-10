@@ -1,0 +1,262 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Times New Roman', Times, serif !important;
+    overflow-x: hidden; 
+}
+
+p,h1,h2,h3,h4, .but{
+	text-align:center;
+}
+header{
+	position:relative;
+	
+}
+section,h1{
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+section,h3{ 
+     font-size: 18px;
+    line-height: 1.7;
+    text-align: left;
+    padding: 5px;
+    margin-left: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*** Navbar ***/
+.nav-link{
+	color:white !important;
+}
+
+.nav-item{
+	box-shadow:0 4px 2px -2px #f9f9f9;
+	transition:transform 0.5s;
+	padding:5px;
+}
+.nav-item:hover{
+	transform:translateY(-10px);
+	color:var(--dark) !important;
+}
+/*** Hero Header ***/
+.hero-header {
+	background-color:#1230AE !important;
+    background:
+        url(../images/bg-dot.png),
+        url(../images/bg-dot.png),
+        url(../images/bg-round.png),
+        url(../images/bg-tree.png),
+        url(../images/bg-bottom-hero.png);
+    background-position:
+        10px 10px,
+        bottom 190px right 10px,
+        left 55% top -1px,
+        left 45% bottom -1px,
+        center bottom -1px;
+    background-repeat: no-repeat;
+}
+/*Amena*/
+.card{
+    border-radius: 40px;
+    transition: transform 0.3s ease;
+	padding-top:10px;
+	border-style:none;
+    margin-right: 10px;
+    margin-left: 10px;
+	/* transition:background-color 0.5s; */
+}
+.card.active {
+    transform: scale(1.1); 
+    background-color:#1230AE;
+	color:white;/* بزرگ‌تر کردن کارت */
+}
+@media(max-width:547px){
+    .card.active {
+        transform: scale(1.05); 
+}
+.card{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}     
+}
+.icon{
+	font-size:2em;
+	text-align:center;
+	padding:25px;
+	color:white;
+	background-image:url(../images/icon-shape-primary.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+.back{
+	background-color:#1230AE;
+	background-image:url(../images/bg-newsletter.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+footer{
+	background-color:#1230AE;
+	background-image:url(../images/footer.png);
+	background-repeat: no-repeat;
+	background-position:center;
+	text-align:center;
+	padding:5% 5%  0 5%;
+	
+}
+.email{
+	color:white;
+	text-decoration:none;
+}
+
+@media(max-width:547px){
+	.new-img{
+		width:100%;
+		height:100%;
+		
+	}
+}
+/*** Team ***/
+.team-item {
+    position: relative;
+    transition: .5s;
+    z-index: 1;
+}
+
+.team-item::after {
+    position: absolute;
+    content: "";
+    top: 3rem;
+    right: 3rem;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .1);
+    transition: .5s;
+    z-index: -1;
+}
+
+.team-item:hover::after {
+    background: var(--primary);
+}
+
+.team-item h5,
+.team-item small {
+    transition: .5s;
+}
+
+.team-item:hover h5,
+.team-item:hover small {
+    color: var(--light);
+}
+
+/*Amena*/
+.image-study{
+    margin: 10px;
+    width: 200px;
+    height: 150px;
+    align-self: center;
+}
+/* .english{
+    margin-top: 20px;
+} */
+.text{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.line-after-our-activity{
+    width: 500px;
+    margin-left: 320px;
+    color:  rgb(47, 181, 235);;
+}
+.certifcate-learn{
+    width: 200px;
+    height:200px;
+    align-self: center;
+
+}
+
+.custom-input, .custom-btn{
+    width: 250PX; 
+    margin-left: 10px;
+}
+
+.image-container {
+    position: relative;
+    height: 450px; /* ارتفاع دیو */
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.image-wrapper {
+    position: absolute;
+    top: 0;
+    animation: slideDown 30s linear infinite; /* زمان انیمیشن */
+}
+
+.image {
+    display: block;
+    width: 100%; /* اندازه تصویر */
+    height: 280px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    object-fit: cover;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%); /* حرکت به سمت بالا */
+    }
+
+}
+@media(max-width:770px){
+    .image-wrapper{
+        position: relative;
+        display: flex;
+        left: 0;
+        overflow: hidden;
+        animation: slideH 30s linear infinite;
+    }
+    .image-container {
+        position: absolute;
+        height: 300px; /* ارتفاع دیو */
+        margin-top: 30px;
+    }
+    .image {
+        width: 200px; /* اندازه تصویر */
+        height: 280px;
+        margin-right: 15px;
+        display: flex;
+    } 
+    .h{
+        display: block;
+    }
+    @keyframes slideH {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%); /* حرکت به سمت چپ */
+        }
+    
+}
+}
+@media (max-width: 767px) {
+    .card-container {
+        margin-top: 300px;
+    }
+}
+:root {
+    --primary: #2124B1;
+    --secondary: #4777F5;
+    --light: #F7FAFF;
+    --dark: #1D1D27;
+}
