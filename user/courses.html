@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning Platform</title>
+	<link rel="icon" href="../images/graduation-cap-solid.svg" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <!-- Sidebar -->
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">
+                            <div class="text-center profile-section">
+                                <img src="image/graduated.png" alt="Profile" class="img-fluid rounded-circle" width="80">
+                                <h4 class="name">Amena Omari</h4>
+                                <p class="text-muted">Student</p>
+                                
+                            </div>
+                        </span>
+                    </a>
+                    <button id="openPopupBtn">View Profile</button>
+
+                    <!-- The pop-up container (initially hidden) -->
+                    <div id="popupOverlay" class="popup-overlay">
+                        <div class="popup-content">
+                            <h3>Inforamation</h3>
+                            <p>Name.</p>
+                            <button class="close-btn" id="closePopupBtn">Close</button>
+                        </div>
+                    </div>
+                
+                    </script>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <img src="image/home-button.png" alt="Profile" class="img-fluid  mb-1" style="width: 25px;"><span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="courses.html" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <img src="image/classroom.png" alt="Profile" class="img-fluid  mb-1" style="width: 25px;"><span class="ms-1 d-none d-sm-inline">Your Courses</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="teacher.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-table"></i><img src="image/teachers-day.png" alt="Profile" class="img-fluid  mb-1" style="width: 25px;"><span class="ms-1 d-none d-sm-inline">Your Teachers</span></a>
+                        </li>
+                        <li>
+                            <a href="curriculum.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-table"></i><img src="image/resume.png" alt="Profile" class="img-fluid  mb-1" style="width: 25px;"><span class="ms-1 d-none d-sm-inline">Your Curriculum</span></a>
+                        </li>
+                        <li>
+                            <a href="Exam.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-table"></i><img src="image/exam.png" alt="Profile" class="img-fluid  mb-1" style="width: 25px;"><span class="ms-1 d-none d-sm-inline">Exam & Grade</span></a>
+                        </li>
+                        <li>
+                            <a href="progress.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-table"></i><img src="image/business.png" alt="Profile" class="img-fluid  mb-1" style="width: 25px;"><span class="ms-1 d-none d-sm-inline">Your Progress</span></a>
+                        </li>
+                        <li>
+                            <a href="feedback.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-table"></i><img src="image/tick.png" alt="Profile" class="img-fluid  mb-1" style="width: 25px;"><span class="ms-1 d-none d-sm-inline">Feedback</span></a>
+                        </li>
+                        
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div class="col py-3">
+            <div class="col col-md-9 col-xl-12">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h1>Studys</h1>
+                    <input type="text" class="form-control w-50" placeholder="search courses">
+                    <div class="d-flex">
+                            <a href="../sign-in.html">Log Out</a>
+                    </div>
+                </div>
+
+                <!-- Course Cards -->
+                <div class="row">
+                    
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="image/html23.jpg" class="card-img-top html" alt="HTML Course">
+                            <div class="card-body">
+                                <h5 class="card-title search">Html</h5>
+                                <p>80% complete<br>Level: Beginner</p>
+                                <small>DR Anjella</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="image/css123.jpg" class="card-img-top css" alt="CSS Course">
+                            <div class="card-body">
+                                <h5 class="card-title search">Css</h5>
+                                <p>30% complete<br>Level: Beginner</p>
+                                <small>DR Anjella</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="image/javascript.jpg" class="card-img-top java" alt="JavaScript Course">
+                            <div class="card-body">
+                                <h5 class="card-title search">Java Script</h5>
+                                <p>20% complete<br>Level: Beginner</p>
+                                <small>DR Anjella</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center p-3 bg-light">
+        <small>&copy; 2024 Online Learning | All rights reserved</small>
+    </footer>
+
+    <!-- Bootstrap JS -->
+	<script>
+	/ تعریف تابعی برای فیلتر کلاس‌ها بر اساس ویژگی‌های مختلف
+function filterClassesByAttribute(attribute, value) {
+    // یافتن تمام المان‌هایی که کلاس‌ها دارند
+    const allElements = document.querySelectorAll('.search');
+
+    // پیمایش تمام المان‌ها
+    allElements.forEach(element => {
+        // چک کردن وجود ویژگی مورد نظر در کلاس المان
+        if (element.classList.contains(attribute) && element.classList.contains(value)) {
+            // نمایش المان‌های مورد نظر
+            element.style.display = 'block';
+        } else {
+            // مخفی کردن المان‌هایی که با ویژگی مطابقت ندارند
+            element.style.display = 'none';
+        }
+    });
+}
+
+// استفاده از تابع برای فیلتر کلاس‌ها بر اساس ویژگی‌های مورد نظر
+filterClassesByAttribute('difficulty', 'advanced'); // فیلتر بر اساس سختی
+filterClassesByAttribute('instructor', 'John Doe'); // فیلتر بر اساس استاد
+filterClassesByAttribute('subject', 'Mathematics'); // فیلتر بر اساس موضوع
+	</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
